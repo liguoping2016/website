@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>h9聊天室</title>
+	<link rel="stylesheet" type="text/css" href="../css/index.css">
+</head>
+<body>
+	<div class="box">
+		<h2>欢迎聊天</h2>
+		<p>在线人数<span>0</span>聊天</p>
+		<hr>
+		<div class="chat"  id="messages">
+			<ul>
+			</ul>
+		</div>
+		<form>
+			<input type="text" name="" placeholder="请输入聊天内容" id="m">
+			<input  type="submit" name="" value="发送"/>
+		</form>
+	</div>
+</body>
+	<script src="/socket.io/socket.io.js"></script>
+	<script type="text/javascript">
+
+		var socket = io("http://10.80.13.123:4040");
+		var box = document.querySelector(".box");
+		var btn =document.querySelector("[type='submit']");
+		var val = document.querySelector("[type ='text']");
+		var chat = document.querySelector(".chat");
+		console.log(chat);
+		var ul =document.querySelector("ul");
+		var span = document.querySelector("span");
+		btn.onclick =function(ev){
+			ev.preventDefault();
+			var message  = val.value;
+			socket.emit('message', {Info:message});
+			
+		} 
+		socket.on('news',function(data){
+			ul.innerHTML="";
+			for(var i=0;i<data.arr.length;i++){
+				var li = document.createElement("li");
+				li.innerHTML = data.arr[i].Info;
+				ul.appendChild(li);	
+			
+			}
+				chat.scrollTop =chat.scrollHeight;
+				var count = data.num;
+				span.innerHTML = count;
+				
+	  		});
+		
+
+	</script>
+</html>
