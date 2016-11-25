@@ -1,0 +1,124 @@
+doctype html
+html
+	head
+		meta(charset="utf-8")
+		title= title
+		link(rel='stylesheet', href='/stylesheets/style.css')
+		link(rel='stylesheet', href='/stylesheets/login.css')
+		script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js",type="text/javascript")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js")
+		script(src="/javascripts/public.js")
+	body
+		include header
+		block content
+		div.logreg_main
+			div.minWidth
+				div.logreg_box
+					div.logreg_tle
+						if(isLogi)
+							span.loginbtn.on 登录
+						else
+							span.loginbtn 登录
+						if(isRegiste)
+							span.registerbtn.on 注册
+						else
+							span.registerbtn 注册
+					if(on)
+						div.login_box.on
+							form(method="post",action="",name="login",autocomplete="off")
+								div.box
+									span.tel
+									input(text="text",name="tel",placeholder="请输入手机号")#log_tel
+								div.box
+									span.pass
+									input(text="password",name="pass",placeholder="请输入密码(6-20个字符)")#log_pass
+								div.box#grap
+									div.grap_left
+										span.grap
+										input(type="text",name="grap",placeholder="验证码",value="")#log_grap
+									div.grap_right
+										img(src="/images/verify.png",style="width:97px;",onclick="this.src=&quot;/images/verify?rand=&quot;+Math.random()")#imgId
+								div.remember
+									p
+										span
+										记住我
+									input(type="hidden",name="auto",value="").reme
+									a(href="") 忘记密码
+								div(onclick="loginbtn()").log_btn 登录
+					else
+						div.login_box
+							form(method="post",action="",name="login",autocomplete="off")
+								div.box
+									span.tel
+									input(text="text",name="tel",placeholder="请输入手机号")#log_tel
+								div.box
+									span.pass
+									input(text="password",name="pass",placeholder="请输入密码(6-20个字符)")#log_pass
+								div.box#grap.rm
+									div.grap_left
+										span.grap
+										input(type="text",name="grap",placeholder="验证码",value="")#log_grap
+									div.grap_right
+										img(src="/images/verify.png",style="width:97px;",onclick="this.src=&quot;/images/verify?rand=&quot;+Math.random()")#imgId
+								div.remember
+									p
+										span
+										记住我
+									input(type="hidden",name="auto",value="").reme
+									a(href="") 忘记密码
+								div(onclick="loginbtn()").log_btn 登录
+					if(onr)
+						div.register_box.on
+							form(method="post",action="",name="regist",autocomplete="off")
+								div.box
+									span.tel
+									input(text="text",name="tel",placeholder="请输入手机号")#log_tel
+								div.box.rm
+									div.message_left
+										span.message
+										input(type="text",name="message",placeholder="注册码",value="",maxlength="6")#message
+									div.message_right 获取注册码
+								div.box
+									span.pass
+									input(text="password",name="pass",placeholder="请输入密码(6-20个字符)")#log_pass
+								div.box
+									span.pass
+									input(text="text",name="pass",placeholder="请输入邮箱")#log_mail
+								div.box.rm
+									span.passed
+									input(type="password",name="passed",placeholder="请再次输入密码",value="")#reg_passed
+								p.clause
+									span.on
+									a(href="#") 同意网站条款
+								div.log_btn.on 提交
+					else
+						div.register_box
+							form(method="post",action="",name="regist",autocomplete="off")
+								div.box
+									span.tel
+									input(text="text",name="tel",placeholder="请输入手机号")#log_tel
+								div.box.rm
+									div.message_left
+										span.message
+										input(type="text",name="message",placeholder="注册码",value="",maxlength="6")#message
+									div.message_right 获取注册码
+								div.box
+									span.pass
+									input(text="password",name="pass",placeholder="请输入密码(6-20个字符)")#log_pass
+								div.box
+									span.pass
+									input(text="text",name="pass",placeholder="请输入邮箱")#log_mail
+								div.box.rm
+									span.passed
+									input(type="password",name="passed",placeholder="请再次输入密码",value="")#reg_passed
+								p.clause
+									span.on
+									a(href="#") 同意网站条款
+								div.log_btn.on 提交
+		include footers
+		p #{data}
+		script(src="/javascripts/ajax.js")
+		script(src="/javascripts/login.js")
+		script(src="/javascripts/updata.js")
+
+

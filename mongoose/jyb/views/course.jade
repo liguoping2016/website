@@ -1,0 +1,94 @@
+div.main(did="1")
+	div.minWidth
+		div.banner
+			div.banner_cont
+				ul(style="left:0px")
+					li
+						a(href="/details")
+							img(src="/images/banner1.jpg")
+					li
+						a(href="/details")
+							img(src="/images/banner2.jpg")
+					li
+						a(href="/details")
+							img(src="/images/banner3.jpg")
+			ul.circular
+				li.on
+				li
+				li
+			div.banner_btn.banner_left
+			div.banner_btn.banner_right
+		div#ke(style="height:30px",name="ke")
+		div.livecourse
+			div.livecourse_left
+				ul
+					if(istrue)
+						li
+							a(href="/all2/"+dian).on 全部
+					else
+						li
+							a(href="/all2/"+dian) 全部
+					if(isios)
+						li
+							a(href="/ios2/"+dian).on iOS
+					else
+						li
+							a(href="/ios2/"+dian) iOS
+					if(ishtml)
+						li
+							a(href="/html2/"+dian).on HTML5
+					else
+						li
+							a(href="/html2/"+dian) HTML5
+					if(isunity)
+						li
+							a(href="/unity2/"+dian).on Unity-3D
+					else
+						li
+							a(href="/unity2/"+dian) Unity-3D
+					if(isreact)
+						li
+							a(href="/react2/"+dian).on React Native
+					else
+						li
+							a(href="/react2/"+dian) React Native
+			div.livecourse_right
+				div.livecourse_right_tle
+					a(href=bo+"/alls")
+						span(class=active.all) 全部
+					a(href=bo+"/zb")
+						if(isDirec)
+							span(class=active.zhibo) #{isDirect}
+						else
+							span(class=active.zhibo) #{isDirect}
+					a(href=bo+"/db")
+						if(isBunc)
+							span(class=active.dianbo) #{isBunch}
+						else
+							span(class=active.dianbo) #{isBunch}
+				div.livecourse_right_cont
+					-each item,index in data
+						div.livecourse_right_box
+							a(href="/details")
+								img(src="#{item.pic}")
+								div.info
+									div.title #{item.className}
+									p 
+										span 蓝鸥科技
+										span #{item.date}
+									p.places
+										span 剩余名额：#{item.number}
+									em #{item.des}
+								div.money
+									em #{item.oldPrice}
+									i #{item.price}			
+		div.page
+			div
+				a(href="/").first 首页
+				a(href="/").prev 上一页
+				a(href="/").next 下一页
+				a(href="/").end 尾页
+				a(href="/").num 第
+					input(type="text",disabled="disabled",value="1")
+					span 页
+				span.row 共2页

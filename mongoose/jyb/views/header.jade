@@ -1,0 +1,39 @@
+div.header
+	div.minWidth
+		div.logo
+			a(href="/")
+				img(src="/images/logo.png")
+			span
+				img(src="/images/logo_bef.png")
+		div.nav
+			ul
+				li
+					if(isDirec)
+						a(href="/list?*").on #{isDirect}
+					else
+						a(href="/list?*") #{isDirect}
+				li
+					if(isBunc)
+						a(href="/dian?*").on #{isBunch}
+					else
+						a(href="/dian?*") #{isBunch}
+		div.logreg
+			div.ruzhu
+				a(href="/")
+					img(src="/images/10000.png")
+					span 短信登陆
+			div.logreg_cont
+				if(islogin)
+					a(href="/").on 个人中心
+					i |
+					a(href="/") 退出
+				else
+					if(isLogi)
+						a(href="/login").on #{isLogin}
+					else
+						a(href="/login") #{isLogin}
+					i |
+					if(isRegiste)
+						a(href="/reg").on #{isRegister}
+					else
+						a(href="/reg") #{isRegister}

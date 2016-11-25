@@ -1,0 +1,368 @@
+input{
+	border: none;
+    outline: none;
+    background: none !important;
+    background-color: transparent !important;
+    font-family: Microsoft Yahei;
+}
+em{
+	font-style: normal;
+    font-weight: normal;
+}
+.logreg_main{
+	width: 100%;
+    height: 678px;
+    background: url(/images/logreg_bg.jpg) no-repeat center;
+    .minWidth{
+    	height: 100%;
+	    width: 1232px;
+	    margin: 0px auto;
+	    overflow: hidden;
+	    position: relative;
+    	.logreg_box{
+    		top: 79px;
+		    width: 352px;
+		    right: 150px;
+		    position: absolute;
+    		.logreg_tle{
+			    width: 352px;
+			    height: 60px;
+			    line-height: 60px;
+			    span{
+			    	float: left;
+				    width: 176px;
+				    color: #999999;
+				    display: block;
+				    font-size: 16px;
+				    cursor: pointer;
+				    font-weight: bold;
+				    text-align: center;
+				    background-color: rgba(0,0,0,0.5) !important;
+				    background: #000;
+			    }
+			    .on{
+			    	color: #ffffff;
+				    background-color: rgba(0,0,0,0.7) !important;
+				 	background: #000;
+			    }
+    		}
+    		.login_box{
+    			display: none;
+			    width: 300px;
+			    padding: 32px 26px 44px 26px;
+			    background-color: rgba(0,0,0,0.7) !important;
+			 	background: #000;
+			 	form{
+			 		.box{
+			 			width: 298px;
+					    height: 40px;
+					    position: relative;
+					    margin-bottom: 20px;
+					    border: 1px solid #ffffff;
+			 			.tel{
+							float: left;
+						    width: 40px;
+						    height: 40px;
+						    display: block;
+    						background: url(/images/other_ico.png) no-repeat 13px -73px;
+			 			}
+			 			.pass{	
+			 				float: left;
+						    width: 40px;
+						    height: 40px;
+						    display: block;
+    						background: url(/images/other_ico.png) no-repeat 13px -182px;
+			 			}
+			 			input{
+			 				float: left;
+						    height: 18px;
+						    width: 258px;
+						    color: #ffffff;
+						    font-size: 14px;
+						    text-indent: 10px;
+						    padding: 11px 0px;
+						    position: absolute;
+			 			}
+			 			.error{
+			 				// display: none;
+		 				    top: 10px;
+						    right: 10px;
+						    color: #ff3434;
+						    font-size: 14px;
+						    position: absolute;
+			 			}
+			 		}
+			 		#grap{
+			 			display: none;
+			 			.grap_left{
+			 				float: left;
+						    width: 200px;
+						    overflow: hidden;
+						    position: relative;
+						    span{
+						    	float: left;
+							    width: 40px;
+							    height: 40px;
+							    display: block;
+							    background: url(../images/other_ico.png) no-repeat 11px -111px;
+						    }
+						    input{
+						    	float: left;
+   								width: 160px;
+						    }
+			 			}
+			 			.grap_right{
+			 				float: right;
+						    width: 97px;
+						    height: 40px;
+						    cursor: pointer;
+						    img{
+						    	width: 97px;
+						    	 height:40px;
+						    }
+			 			}
+			 		}
+			 		.remember{
+			 			overflow: hidden;
+   						margin-top: -14px;
+   						p{
+				 			float: left;
+						    color: #ffffff;
+						    cursor: pointer;
+						    font-size: 14px;
+						   span{
+						   	    width: 13px;
+							    height: 12px;
+							    margin-right: 5px;
+							    margin-bottom: -1px;
+							    display: inline-block;
+							    background: url(/images/other_ico.png) no-repeat 0px -266px;
+						   }
+						   .on{
+						   		background:url(/images/other_ico.png) no-repeat 0px -288px;
+						   }
+						}
+					    a{
+					    	float: right;
+						    color: #ffffff;
+						    font-size: 14px;
+					    }
+					    a:hover{
+					    	text-decoration: none;
+					    }
+			 		}
+			 		.log_btn{
+			 			width: 300px;
+					    height: 42px;
+					    color: #ffffff;
+					    font-size: 16px;
+					    cursor: pointer;
+					    margin-top: 27px;
+					    line-height: 42px;
+					    border-radius: 2px;
+					    text-align: center;
+					    background: #fb6c03;
+			 		}
+			 		.log_btn:hover{
+			 			background:#ee873c;
+			 		}
+			 		.on{
+			 			background:#cccccc !important;
+			 		}
+			 	}
+
+    		}
+
+    		.redon{
+    			border: 1px solid #ff3434 !important;
+    		}
+    		.register_box{
+    			display: none;
+    			width: 300px;
+			    padding: 32px 26px 44px 26px;
+			    background-color: rgba(0,0,0,0.7) !important;
+			 	background: #000;
+			 	form{
+			 		.box{
+			 			width: 298px;
+					    height: 40px;
+					    position: relative;
+					    margin-bottom: 20px;
+					    border: 1px solid #ffffff;
+			 			.tel{
+							float: left;
+						    width: 40px;
+						    height: 40px;
+						    display: block;
+    						background: url(/images/other_ico.png) no-repeat 13px -73px;
+			 			}
+			 			.pass{	
+			 				float: left;
+						    width: 40px;
+						    height: 40px;
+						    display: block;
+    						background: url(/images/other_ico.png) no-repeat 13px -182px;
+			 			}
+			 			.passed{
+			 				float: left;
+						    width: 40px;
+						    height: 40px;
+						    display: block;
+						    background: url(/images/other_ico.png) no-repeat 13px -218px;
+			 			}
+			 			input{
+			 				float: left;
+						    height: 18px;
+						    width: 258px;
+						    color: #ffffff;
+						    font-size: 14px;
+						    text-indent: 10px;
+						    padding: 11px 0px;
+						    position: absolute;
+			 			}
+			 			.error{
+			 				display: none;
+		 				    top: 10px;
+						    right: 10px;
+						    color: #ff3434;
+						    font-size: 14px;
+						    position: absolute;
+			 			}
+			 			.message_left{
+			 				float: left;
+						    width: 200px;
+						    overflow: hidden;
+						    position: relative;
+						    .message{
+						    	float: left;
+							    width: 40px;
+							    height: 40px;
+							    display: block;
+							    background: url(/images/other_ico.png) no-repeat 13px -145px;
+						    }
+						    #message{
+						    	float: left;
+   								width: 159px;
+						    }
+			 			}
+			 			.message_right{
+			 				float: right;
+						    width: 97px;
+						    height: 40px;
+						    color: #ffffff;
+						    font-size: 14px;
+						    cursor: pointer;
+						    line-height: 40px;
+						    text-align: center;
+			 			}
+			 		}
+			 		.rm{
+			 			display: none;
+			 		}
+			 		.clause{
+			 			margin-top: -14px;
+			 			span{
+			 				width: 13px;
+						    height: 12px;
+						    cursor: pointer;
+						    margin-right: 5px;
+						    margin-bottom: -1px;
+						    display: inline-block;
+						    // background: url(/images/other_ico.png) no-repeat 0px -266px;
+			 			}
+			 			.on{
+							background:url(/images/other_ico.png) no-repeat 0px -288px;
+			 			}
+		 			 	a{
+					   	    color: #ffffff;
+							font-size: 14px;
+					   	}
+					   	a:hover{
+					   		text-decoration:underline;
+					   	}
+			 		}
+			 		#grap{
+			 			display: none;
+			 			.grap_left{
+			 				float: left;
+						    width: 200px;
+						    overflow: hidden;
+						    position: relative;
+						    span{
+						    	float: left;
+							    width: 40px;
+							    height: 40px;
+							    display: block;
+							    background: url(../images/other_ico.png) no-repeat 11px -111px;
+						    }
+						    input{
+						    	float: left;
+   								width: 160px;
+						    }
+			 			}
+			 			.grap_right{
+			 				float: right;
+						    width: 97px;
+						    height: 40px;
+						    cursor: pointer;
+						    img{
+						    	width: 97px;
+						    	 height:40px;
+						    }
+			 			}
+			 		}
+			 		.remember{
+			 			overflow: hidden;
+   						margin-top: -14px;
+   						p{
+				 			float: left;
+						    color: #ffffff;
+						    cursor: pointer;
+						    font-size: 14px;
+						   span{
+						   	    width: 13px;
+							    height: 12px;
+							    margin-right: 5px;
+							    margin-bottom: -1px;
+							    display: inline-block;
+							    background: url(/images/other_ico.png) no-repeat 0px -266px;
+						   }
+						   .on{
+						   		background:url(/images/other_ico.png) no-repeat 0px -288px;
+						   }
+						}
+					    a{
+					    	float: right;
+						    color: #ffffff;
+						    font-size: 14px;
+					    }
+					    a:hover{
+					    	text-decoration: none;
+					    }
+			 		}
+			 		.log_btn{
+			 			width: 300px;
+					    height: 42px;
+					    color: #ffffff;
+					    font-size: 16px;
+					    cursor: pointer;
+					    margin-top: 27px;
+					    line-height: 42px;
+					    border-radius: 2px;
+					    text-align: center;
+					    background: #fb6c03;
+			 		}
+			 		.log_btn:hover{
+			 			background:#ee873c;
+			 		}
+			 		.on{
+			 			background:#cccccc !important;
+			 		}
+			 	}
+    		}
+    		.on{
+    			display: block;
+    		}
+    	}
+    }
+}
