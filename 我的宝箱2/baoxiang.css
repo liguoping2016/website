@@ -1,0 +1,473 @@
+body,html{
+	margin:0;
+	padding:0;
+	min-height: 100%;
+	background-color: #ffffd5;
+	font:14px/1.6 Arial,sans-serif;
+}
+h2,h3,h4{
+	margin:0;
+}
+ul{
+	margin: 0;
+	padding:0;
+	list-style: none;
+}
+.opened{
+	padding:0 34px;
+}
+.opened h2{
+	height:65px;
+	line-height:65px;
+	font-size: 28px;
+}
+.opened h2 i{
+	color:red;
+	margin-left:40px;
+	font-size: 20px;
+}
+.opened h4{
+	position: absolute;
+	top:18px;
+	left:300px;
+	font-size: 16px;
+	color:lightgray;
+}
+.opened ul{
+	width:490px;
+	overflow: hidden;
+}
+.opened ul li{
+	float:left;
+	width:236px;
+	height:95px;
+	box-sizing: border-box;
+	margin-bottom: 12px;
+	border-radius: 10px
+}
+.opened ul .red{
+	background:#fa3530 url(img/redBox.png) 14px 15px no-repeat;
+	background-size: 56px 68px;
+	padding-left:85px;
+}
+.opened ul .red h3{
+	height:48px;
+	line-height: 48px;
+	font-size:24px;
+	color:#fff;
+}
+.opened ul .red span{
+	font-size: 24px;
+	color:#fff;
+	display: block;
+}
+.opened ul .red i{
+	font-size: 46px;
+	line-height: 36px;
+	font-style:normal;
+}
+.opened ul .flow{
+	background:#fa3530 url(img/wifi.png) 14px 15px no-repeat;
+	background-size: 71px;
+	padding-left:95px;
+}
+.opened ul .flow h3{
+	height: 48px;
+	line-height: 48px;
+	font-size: 24px;
+	color:#fff;
+}
+.opened ul .flow span{
+	font-size: 24px;
+	color:#fff;
+	display: block;
+}
+.opened ul .flow i{
+	font-size: 46px;
+	line-height: 36px;
+	font-style:normal;
+}
+.opened ul .lottery{
+	background:#fa3530 url(img/redBlue.png) 14px 15px no-repeat;
+	background-size: 71px;
+	padding-left:95px;
+}
+.opened ul .lottery h3{
+	height: 48px;
+	line-height: 95px;
+	font-size: 24px;
+	color:#fff;
+	text-align: center;
+
+}
+.opened ul .loss{
+	background:#fa3530;
+}
+.opened ul .loss h3{
+	height: 48px;
+	line-height: 95px;
+	font-size: 24px;
+	color:#fff;
+	text-align: center;
+}
+.opened ul .noGet{
+	text-align: center;
+	line-height: 95px;
+	border:2px dashed #f9a09e;
+	color:#f9a09e;
+}
+/*even 偶数*/
+.opened ul li:nth-child(even){
+	margin-left:12px;
+}
+.hidden{
+	display: none;
+}
+.unopened{
+	background:#fa3530;
+	width:560px;
+	height:242px;
+}
+.unopened h2{
+	height:65px;
+	line-height:65px;
+	font-size: 28px;
+	padding:0 34px;
+	color:#fff;
+}
+.unopened h2 i{
+	height:65px;
+	line-height:65px;
+	font-size: 40px;
+	color:yellow;
+	font-weight:lighter;
+	font-style: normal;
+}
+.unopened .overflow{
+	width:498px;
+	overflow: hidden;
+	margin-left: 27px;
+}
+.unopened .noBox{
+	width:1600px;
+	height:121px;	
+	transition: 1s  ;
+}
+.unopened .noBox li{
+	width:498px;
+	height:121px;
+	float: left;
+
+}
+.unopened .noBox li .item{
+	float:left;
+	height:121px;
+}
+.unopened .noBox li .item1{
+	width:166px;
+	background:url("img/xz-11.png") -12px -20px no-repeat; 
+	background-size:160px 160px;	
+}
+.unopened .noBox li .item1:hover{
+	background: url("img/xz-1.gif") -12px -20px no-repeat;
+	background-size:160px 160px;
+}
+.unopened .noBox li .white{
+	width:32px;
+	height:32px;
+	border-radius:50px;
+	background-color:white;
+	margin-left:134px;
+	text-align: center;
+	line-height: 32px;
+	color:#f51829;
+	font-size: 16px;
+	margin-top:13px;
+}
+.unopened .noBox li .item2{
+	width:160px;
+	background:url("img/xz-22.png") -12px -20px no-repeat; 
+	background-size:160px 160px;
+	margin-left: 6px;
+}
+.unopened .noBox li .item2:hover{
+	background: url("img/xz-2.gif") -12px -20px no-repeat;
+	background-size:160px 160px;
+}
+.unopened .noBox li .item2 .white{
+	margin-left:128px;
+}
+.unopened .noBox li .item3{
+	width:155px;
+	background:url("img/xz-55.png") -6px -20px no-repeat; 
+	background-size:160px 160px;
+	margin-left: 6px;
+}
+.unopened .noBox li .item3:hover{
+	background: url("img/xz-5.gif")  -6px -20px no-repeat;
+	background-size:160px 160px;
+}
+.unopened .noBox li .item3 .white{
+	margin-left:123px;
+}
+.unopened .noBox li .item4{
+	width:166px;
+	background:url("img/xz-22.png") -12px -20px no-repeat;
+	background-size:160px 160px; 	
+}
+.unopened .noBox li .item4:hover{
+	background: url("img/xz-2.gif") -12px -20px no-repeat;
+	background-size:160px 160px;
+}
+.unopened .noBox li .item5{
+	width:160px;
+	background:url("img/xz-44.png") -12px -20px no-repeat; 
+	background-size:160px 160px;
+	margin-left: 6px;
+}
+.unopened .noBox li .item5:hover{
+	background: url("img/xz-4.gif") -12px -20px no-repeat;
+	background-size:160px 160px;
+}
+.unopened .noBox li .item5 .white{
+	margin-left:128px;
+}
+.unopened .noBox li .item6{
+	width:155px;
+	background:url("img/xz-66.png") -6px -20px no-repeat; 
+	background-size:160px 160px;
+	margin-left: 6px;
+}
+.unopened .noBox li .item6:hover{
+	background: url("img/xz-6.gif")  -6px -20px no-repeat;
+	background-size:160px 160px;
+}
+.unopened .noBox li .item6 .white{
+	margin-left:123px;
+}
+.unopened .noBox li .item7{
+	width:166px;
+	background:url("img/xz-11.png") -12px -20px no-repeat; 	
+	background-size:160px 160px;
+}
+.unopened .noBox li .item7:hover{
+	background: url("img/xz-1.gif") -12px -20px no-repeat;
+	background-size:160px 160px;
+}
+.unopened .noBox li .item8{
+	width:160px;
+	background:url("img/xz-33.png") -12px -20px no-repeat; 
+	background-size:160px 160px;
+	margin-left: 6px;
+}
+.unopened .noBox li .item8:hover{
+	background: url("img/xz-3.gif") -12px -20px no-repeat;
+	background-size:160px 160px;
+}
+.unopened .noBox li .item8 .white{
+	margin-left:128px;
+}
+.unopened .noBox li .item9{
+	width:155px;
+	background:url("img/xz-44.png") -6px -20px no-repeat; 
+	background-size:160px 160px;
+	margin-left: 6px;
+}
+.unopened .noBox li .item9:hover{
+	background: url("img/xz-4.gif") -6px -20px no-repeat;
+	background-size:160px 160px;
+}
+.unopened .noBox li .item9 .white{
+	margin-left:123px;
+}
+.btn{
+	margin-left:522px;
+	margin-top:-90px;
+	width:38px;
+	height:45px;
+	background:#982328; 
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	text-align: center;
+	line-height: 45px;
+}
+.btn i{
+	list-style: none;
+	font-size: 20px;
+	color:#f51829;
+}
+.pointer{
+	position: relative;
+	margin-left:251px;
+	width:70px;
+	height:20px;
+	margin-top:74px;
+	/*z-index:10000;*/
+}
+.pointer li{
+	list-style: none;
+	float: left;
+	width:13px;
+	height:13px;
+	background-color: #cdcbcb;
+	border-radius: 50%;
+	margin-right:10px;
+}
+.pointer .active{
+	background-color: #534c4c;
+}
+.none{
+	position: absolute;
+	background:lightblue;
+	width:560px;
+	height:242px;
+	top:279px;
+	text-align: center;
+	z-index: 2;
+	display: none;
+}
+.none span{
+	font-size: 28px;
+	color:#fff;
+	line-height: 242px;
+}
+.gain{
+	padding:0 28px;
+}
+.gain .more{
+	margin-top:6px;
+	width:315px;
+	height:65px;
+	background: url(img/gain.png) no-repeat;
+	background-size: 315px 65px;
+	margin-bottom: 15px;
+}
+.gain .more h2{
+	height:60px;
+	line-height:60px;
+	font-size: 28px;
+	margin-left:92px;
+	padding-top:6px;
+	color:#fff;
+}
+.gain ul{
+
+}
+.gain ul li{
+	list-style: none;
+	width:484px;
+	height:71px;
+}
+.gain  ul .treasure{
+	margin:15px 0 20px 11px;
+	background: url(img/yuebao.png);
+	background-size: 484px 71px;
+}
+.gain  ul   li div{
+	width: 100px;
+	height:80px;
+	margin:-75px 0 0 370px;
+}
+.gain  ul .treasure .zhi{
+	background: url(img/xz-66.png) no-repeat;
+	background-size: 100px 80px;
+}
+.gain  ul .treasure .zhi:hover{
+	background: url(img/xz-6.gif) no-repeat;
+	background-size: 100px 80px;
+}
+.gain  ul .treasure .recharge{
+	background: url(img/xz-11.png) no-repeat;
+	background-size: 100px 80px;
+}
+.gain  ul .treasure .recharge:hover{
+	background: url(img/xz-1.gif) no-repeat;
+	background-size: 100px 80px;
+}
+.gain  ul  h3{
+	color:#fff;
+	font-size: 24px;
+	line-height: 71px;
+	margin-left: 100px
+}
+.gain  ul .share{
+	margin: 0 0 20px 11px;
+	background: url(img/share.png);
+	background-size: 484px 71px;
+}
+.gain  ul .share .fenxiang{
+	background: url(img/xz-44.png) no-repeat;
+	background-size: 100px 80px;
+}
+.gain  ul .share .fenxiang:hover{
+	background: url(img/xz-4.gif) no-repeat;
+	background-size: 100px 80px;
+}
+.gain  ul .share .baby{
+	background: url(img/xz-55.png) no-repeat;
+	background-size: 100px 80px;
+}
+.gain  ul .share .baby:hover{
+	background: url(img/xz-5.gif) no-repeat;
+	background-size: 100px 80px;
+}
+
+.gain  ul .desire{
+	margin: 0 0 20px 11px;
+	background: url(img/desire.png);
+	background-size: 484px 71px;
+}
+.gain  ul .desire .qingdan{
+	background: url(img/xz-33.png) no-repeat;
+	background-size: 100px 80px;
+}
+.gain  ul .desire .qingdan:hover{
+	background: url(img/xz-3.gif) no-repeat;
+	background-size: 100px 80px;
+}
+.gain  ul .desire .bill{
+	background: url(img/xz-22.png) no-repeat;
+	background-size: 100px 80px;
+}
+.gain  ul .desire .bill:hover{
+	background: url(img/xz-2.gif) no-repeat;
+	background-size: 100px 80px;
+}
+
+
+
+
+
+.lodding{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin: -25px 0 0 -25px;
+	width: 300px;
+	height: 50px;
+}
+.loading{
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	border: 1px #000 dashed;
+	transform: rotate(0deg);
+	animation-name: run;
+	animation-duration: 1.5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+.lodding span{
+	position:relative;
+	left:40px;
+	top:-20px;
+}
+@keyframes run{
+	from{
+		transform: rotate(0deg);
+	}
+	to{
+		transform: rotate(360deg);
+
+	}
+}
