@@ -1,0 +1,79 @@
+doctype
+html
+	head
+		meta(charset="utf-8")
+		title #{商品首页}
+		link(rel="stylesheet",href="../css/index.css")
+	body
+		include head.jade
+		div.buy
+			div.buy_min
+				div.buy_left
+					div.magnifier
+						a(href="#")
+							img(src="../images/small.png", alt="")
+						div.mask
+					ul
+						li
+							a(href="#")
+								img(src="../images/small1.png", alt="")
+						li
+							a(href="")
+								img(src="../images/small1.png", alt="")
+						li
+							a(href="")
+								img(src="../images/small1.png", alt="")
+						li.last
+							a(href="")
+								img(src="../images/small1.png", alt="")
+						li.lastlast
+							a(href="")
+								img(src="../images/vadio.png", alt="")
+				div.buy_right
+					h2 麦塔帆布双肩包
+					span ￥340
+					i 传统零售店售价￥1200
+					h3 颜色
+					div.color
+						div.pane
+							img(src="../images/color.png", alt="")
+						p 斜纹牛仔布 <br/> 黑色牛皮
+					div.add 
+						a(href="#") 加入购物车
+					p.postage 免邮费
+				div.big
+					img(src="../images/small.png", alt="")
+			div.details
+				div.details_min
+					div.details_left
+						h3 STYLE DETAILS
+						p Our popular Snap Backpack now in a beautiful,study twill fabarication
+						ul 
+							li 100%cotton twill exterior
+							li 100%cotton twill exterior
+							li 100%cotton twill exterior
+							li 100%cotton twill exterior
+					div.details_center
+						h3 SIZE DETAILS
+						ul 
+							li 100%cotton twill compartment fits Macbook exterior
+							li 100%cotton twill exterior
+							li 100%cotton twill exterior 
+								span support@everlane.com
+					div.details_right
+						h3 SIZE DETAILS
+						p Mr.Hong opend this factory Dongguan,China over 30 years ago.Today he manufactures travel accessories for some of the largest brands in the world ,We've visited this factory many times in the past few years and have built a strong relationship width ,whom we now conside both a friend and an adviser. 
+							span View more.
+			div.from
+				div.from_min
+					p FROM THE PEOPLE
+					div.picture
+						img(src="../images/picnic.png", alt="")
+						img(src="../images/picnic4.png", alt="")
+						img(src="../images/picnic1.png", alt="")
+						img(src="../images/picnic2.png", alt="")
+						img(src="../images/picnic3.png", alt="").last
+			div.transparent
+				img(src="../images/transparent.png", alt="")
+		include footer.jade
+	script(src="../css/js/buy.js")

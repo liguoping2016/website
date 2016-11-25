@@ -1,0 +1,101 @@
+doctype
+html
+	head
+		meta(charset="utf-8")
+		title #{商品首页}
+		link(rel="stylesheet",href="../css/index.css")
+		script(src="../css/js/buy.js")
+	body
+		include header.jade
+		div.emption
+			div.emption_min
+				h2 输入您的收货地址
+				div.emption_min_body
+					div.form
+						form
+							div.on
+								label#username 姓名
+								input(type="text")
+							div.ou
+								label#name 公司
+								input(type="text")
+							br
+							div.on
+								label#address 街道地址
+								input(type="text").address
+							br
+							div.on
+								label#city 城市
+								input(type="text")
+							div.ou
+								label#country 国家
+								input(type="text")
+							br
+							div.on
+								label#country 省
+								input(type="text")
+							div.ou
+								label#country 邮政编码
+								input(type="text")
+							br
+						button.return 返回
+						button.go 继续
+					div.allprice
+						p 订单总计
+						ul
+							li.subtotal
+								span 小计
+								i ￥
+									span 340
+							li.fare
+								span 运费
+								i ￥
+									span 20
+							li.free
+								span 免运费
+								i ￥
+									span 10
+							li.total
+								span 总计
+								i ￥
+									span 349
+			div.goods
+				div.goods_min
+					h3 即将送货
+					p 以下商品即将寄出
+					div.goods_one.good
+						img(src="../images/goods.png", alt="")
+						i 麦塔单肩包
+						div.delete
+							img(src="../images/delete.png", alt="")
+						div.footage
+							span 尺码
+							span 数量
+							span 总价
+						div.size
+							span.junma 均码
+							div.number
+								span.minus -
+								input(type="text",value="1",num="")
+								span.add +
+							span.price ￥
+								span 199	
+					div.underline
+					div.goods_two.good
+						img(src="../images/goods1.png", alt="")
+						i 麦塔单肩包
+						div.delete
+							img(src="../images/delete.png", alt="")
+						div.footage
+							span 尺码
+							span 数量
+							span 总价
+						div.size
+							span.junma 均码
+							div.number
+								span.minus -
+								input(type="text",value="1",num="")
+								span.add +
+							span.price ￥
+								span 199	
+		include footer.jade

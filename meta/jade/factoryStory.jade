@@ -1,0 +1,28 @@
+doctype
+html
+	head
+		meta(charset="utf-8")
+		title #{工厂内页}
+		link(rel="stylesheet", href="../css/index.css")
+		script(src="../css/js/buy.js")
+	body
+		include head.jade
+		div.factoryStory
+			img(src="../images/story.png", alt="").search
+			h2 探索我们的工厂
+			div.scroll
+				div.box
+					ul
+						li
+							a(href="#")
+								img(src="../images/story4.png", alt="")
+						li
+							a(href="#")
+								img(src="../images/stroy3.png", alt="")
+						li
+							a(href="#")
+								img(src="../images/story2.png", alt="")
+						li
+							a(href="#")
+								img(src="../images/story5.png", alt="")
+		include footer.jade
