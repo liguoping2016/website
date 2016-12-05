@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>添加图书</title>
+	<link rel="stylesheet" type="text/css" href="../css/index.css">	
+	<link rel="stylesheet" type="text/css" href="../css/book.css">
+	<script type="text/javascript" src="../js/jquery.js"></script>	
+</head>
+<body>
+	<div class="head">
+		<div class="min_head">
+			<h2>书吧</h2>
+			<ul>
+				<li>
+					<a href="index.php">网站首页</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">关于我们</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">图书展示</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">联系我们</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">购物车</a>
+				</li>
+				<li>
+					<a  href="javascript:void(0)" class="on">添加图书</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="add">
+		<div class="min_add">
+			<h2>添加图书</h2>
+			<div>
+				<label for="" >
+					书名：
+				</label>
+				<input type="text" name="" id="name">
+			</div>
+			<div>
+				<label for="">
+					简介：
+				</label>
+				<input type="text" name="" id="des">
+			</div>
+			<div>
+				<label for="">
+					作者：
+				</label>
+				<input type="text" name="" id="author">
+			</div>
+			<div>
+				<label for="">
+					出版社：
+				</label>
+				<input type="text" name="" id="press">
+			</div>
+			<div>
+				<label for="">
+					出版日期：
+				</label>
+				<input type="text" name="" id="pressDate">
+			</div>
+			<div>
+				<label for="">
+					价格：
+				</label>
+				<input type="text" name="" id="price">
+			</div>
+			<div>
+				<label for="">
+					ISBN：
+				</label>
+				<input type="text" name="" id="isbn">
+			</div>
+			<div>
+				<label for="">
+					书籍图片：
+				</label>
+				<input type="file" name="" id="pic">
+			</div>
+			<button onclick="text()">添加</button>
+		</div>	
+	</div>
+	<div class="foot">
+		<div class="min_foot">
+			<ul>
+				<li>
+					<a href="">免费条款</a>
+				</li>
+				<li>
+					<a href="">隐私保护</a>
+				</li>
+				<li>
+					<a href="">咨询热点</a>
+				</li>
+				<li>
+					<a href="">联系我们</a>
+				</li>
+				<li>
+					<a href="">公司简介</a>
+				</li>
+				<li>
+					<a href="">批发方案</a>
+				</li><li>
+					<a href="">配送方式</a>
+				</li>
+			</ul>
+			<p>2037884534-6593546了覅觉得该喝的</p>
+	</div>
+</body>
+<script type="text/javascript">
+	function text(){
+		var name = $("#name").val();
+		var describe = $("#des").val();
+		var author = $("#author").val();
+		var address = $("#press").val();
+		var startDate = $("#pressDate").val();
+		var price = $("#price").val();
+		var isbn = $("#isbn").val();
+		var pic = $("#pic")[0].files[0];
+		var form = new FormData();
+		form.append("name",name);
+		// console.log(form.append());
+		form.append("describe",describe);
+		form.append("author",author);
+		form.append("address",address);
+		form.append("startDate",startDate);
+		form.append("price",price);
+		form.append("isbn",isbn);
+		form.append("pic",pic);
+
+		// console.log(form);
+
+		$.ajax({
+			type:"post",
+			url:"addbook.php",
+			async:true,
+			data:form,
+			processData:false,
+			contentType:false,
+			success:function(data){
+				console.log(data);
+				// if(data.status ==1){
+				// 	alert("添加成功");
+				// }else{
+				// 	alert("添加失败");
+				// }
+			}
+
+		})
+	
+
+	}
+</script>
+</html>

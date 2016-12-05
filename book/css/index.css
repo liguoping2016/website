@@ -1,0 +1,312 @@
+*{
+	padding:0;
+	margin:0;
+}
+html,body{
+	color:#333;
+	width:100%;
+	height:100%;
+	font-size:14px;
+	min-width:1232px;
+	font-family:Microsoft Yahei;
+}
+ul li{
+	list-style:none;
+}
+a{
+	text-decoration:none;
+}
+img{
+	border:none;
+}
+input{
+	border:none;
+	outline: none;
+}
+.head{
+	width:100%;
+	position: relative;
+	overflow: hidden;
+	background: #222222;
+	height: 100px;
+	border-bottom: 2px solid #080808;
+}
+.head  .min_head{
+	width:1200px;
+	height: 100px;
+	background: #222222;
+	margin: auto;
+	overflow: hidden;
+	line-height: 100px;
+}
+.head  .min_head h2{
+	display: block;
+	float: left;
+	color: #9d9d9d;
+	font-size: 22px;
+	margin-right: 30px;
+}
+.head  .min_head ul{
+	float: left;
+	display: block;
+	height: 100px;
+}
+
+.head  .min_head ul li{
+	float: left;
+	height: 100px;
+	line-height: 100px;
+}
+.head  .min_head ul li a{
+	display: inline;
+	padding:36px 34px;
+	color: #9d9d9d;
+	font-size: 22px;
+	text-align: center;
+}
+
+.head  .min_head ul li .on{
+	background: #080808;
+	color: #fff;
+}
+.main{
+	width: 100%;
+	background: #ffffff;
+	padding-top: 37px;
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 50px;
+}
+.main .min_main{
+	margin:0 auto;
+	width: 1200px;
+	background: #fff;
+	overflow: hidden;
+}
+.main .min_main .left_main{
+	float: left;
+	width:700px;
+	padding: 73px 60px 50px;
+	background: #eeeeee;
+	height: 610px;
+	position: relative;
+}
+.main .min_main .left_main h1{
+	padding-bottom:20px; 
+	font-size: 64px;
+	line-height: 64px;
+}
+.main .min_main .left_main p{
+	font-size: 20px;
+	line-height: 20px;
+	margin-bottom: 20px;
+}
+.main .min_main .left_main img{
+	height: 500px;
+	width:700px;
+}
+.main .min_main .right_main{
+	float: right;
+	position: relative;
+	margin-top:20px;
+	width: 240px;
+}
+.main .min_main .right_main form{
+	display: block;
+	width: 240px;
+}
+.main .min_main .right_main form h2{
+	font-size:48px;
+	font-weight: normal;
+	padding-bottom: 28px;
+}
+
+.main .min_main .right_main form  div{
+	margin-left:20px; 
+	height: 32px;
+	border:2px solid #cccccc;
+	border-radius: 6px;
+	width:216px;
+	margin-bottom: 14px;
+}
+.main .min_main .right_main form div input{
+	width:206px;
+	margin-bottom: 14px;
+	height: 32px;
+	font-size: 16px;
+	padding-left: 10px;
+	box-sizing: border-box;
+}
+.main .min_main .right_main form [name="name"]{
+	width:50px;
+	height: 32px;
+	border-radius: 6px;
+	border:2px solid #cccccc;
+	line-height: 32px;
+	font-size: 16px;
+	text-align: center;
+	background: #fff;
+	margin-left: 24px;
+}
+.main .min_main .right_main form [type="button"]{
+	margin-left: 45px;
+}
+.list{
+	width:100%;
+	position: relative;
+	overflow: hidden;
+	padding-top: 6px;
+	background: #fff;
+}
+.list .min_list{
+	width:1200px;
+	margin:0 auto;
+}
+.list .min_list ul{
+	display: block;
+	overflow: hidden;
+}
+.list .min_list ul li{
+	float: left;
+	width: 300px;
+	height: 486px;
+	display: block;
+	margin-right: 30px;
+	border-radius: 3px;
+	margin-bottom: 20px;
+	border:1px solid #dddddd;
+}
+.list .min_list ul li div{
+	height: 365px;
+	width: 300px;
+
+	text-align: center;
+
+}
+.list .min_list ul li div a{
+	padding-top: 30px;
+	display: block;
+	height: 360px;
+	width: 300px;
+}
+.list .min_list ul li div a img{
+	height: 300px;
+	width: 260px;
+}
+.list .min_list ul li h3{
+	display: block;
+	height: 30px;
+	width:260px;
+	overflow: hidden;
+	line-height: 30px;
+	font-size: 30px;
+	// padding-top: 20px;
+	padding-left: 20px;
+}
+.list .min_list ul li span{
+	font-size: 16px;
+	display:block;
+	float: left;
+	margin-left: 20px;
+	margin-top:20px;
+	float: left;
+}
+.list .min_list ul li span em{
+	font-style: normal;
+}
+.list .min_list ul li .shop{
+	width:100px;
+	height: 38px;
+	background: #5cb85c;
+	font-size: 16px;
+	line-height: 38px;
+	position: relative;
+	text-align: center;
+	border-radius: 3px;
+	float: right;
+	margin-right: 20px;
+	bottom: 10px;
+}
+.list .min_list ul li a{
+	display:block;
+	float:left;
+	color:#fff;
+	width:100px;
+	height: 38px;
+}
+
+.page{
+	margin: 0 auto;
+	width:260px;
+	height:68px;
+	// background: red;
+}
+.page .num{
+	width:260px;
+	height:68px;
+	border: 1px solid #ddd;
+    border-radius: 10px;
+}
+.list .min_list .page .num li{
+width:62px;
+height:68px;
+border-right: 1px solid #ddd;
+float: left;
+  text-align: center;
+  line-height: 68px;
+  cursor: pointer;
+  margin:0;
+}
+.page .num .nu {
+	color: #fff;
+	font-size: 20px;
+  background: #337ab7;
+  color: #fff;
+}
+.page  .num .next {
+  border-right: none;
+}
+.foot{
+	width:100%;
+	margin-top:43px;
+	height: 75px;
+	position: relative;
+	overflow: hidden;
+}
+.foot .min_foot{
+	width:1200px;
+	border-top: 1px solid #eeeeee;
+	margin: 0 auto;
+	text-align: center;
+}
+.foot .min_foot ul{
+	margin-top: 24px;
+	height: 14px;
+	text-align: center;
+	margin-bottom: 13px;
+}
+.foot .min_foot ul li{
+	display: inline-block;
+	margin-left: 5px;
+	height: 14px;
+	
+	line-height: 14px;
+}
+.foot .min_foot ul li 	a{
+color: #347bb7;
+}
+.foot .min_foot p{
+	display: block;
+	color: #d3d3d3;
+}
+
+
+
+
+
+
+
+
+
+
+

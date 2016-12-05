@@ -1,0 +1,180 @@
+.add{
+	width: 100%;
+	overflow: hidden;
+	position:relative; 
+	// display: none;
+}
+.add .min_add{
+	width:1200px;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 85px;
+	padding-bottom: 70px;
+}
+.add .min_add  h2{
+	font-size: 38px;
+	line-height: 38px;
+	margin-bottom: 25px;
+}
+.add .min_add div{
+	height:41px;
+	width:750px;
+	margin: 0 auto;
+	padding-right: 40px;
+	margin-bottom: 15px;
+	line-height: 41px;
+	font-size: 16px;
+}
+.add .min_add div input{
+	width:600px;
+	float: right;
+	height: 37px;
+	border:2px solid #cccccc;
+	border-radius: 6px;
+	font-size: 16px;
+}
+.add .min_add div label{
+	float: left;
+	display: block;
+	text-align: right;
+	width:100px;
+}
+.add .min_add div [type="file"]{
+	border:none;
+	margin-top: 12px;
+}
+.add .min_add button{
+	margin-right:440px; 
+	height: 33px;
+	width:60px;
+	line-height: 33px;
+	text-align: center;
+	background: #fff;
+	border-radius: 5px;
+	outline: none;
+
+}
+
+.shopCart{
+	// display: none;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	padding-top: 90px;
+	background: #fff;
+}
+.shopCart .min_shopCart{
+	width:1200px;
+	margin: auto;
+	overflow: hidden;
+	text-align: center;
+}
+.shopCart .min_shopCart h1{
+	font-size: 38px;
+	padding-bottom: 10px;
+}
+.shopCart .min_shopCart .trade{
+// text-align: center;
+	border:5px solid #efeae5;
+	padding: 28px;
+}
+.shopCart .min_shopCart .trade .min_trade{
+	// text-align: center;
+}
+.shopCart .min_shopCart .min_trade table tr img{
+	padding-top: 5px;
+	padding-bottom: 4px;
+}
+table,tr,td,th{
+	text-align: center;
+	border:1px solid #dddddd;
+}
+.details{
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	padding-top: 3px;
+
+}
+.details .min_details{
+	width:1200px;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+}
+.details .min_details img{
+	float: left;
+	display: block;
+	width:520px;
+	height: 650px;
+	margin-right: 70px;
+	overflow: hidden;
+}
+.details .min_details .des{
+	width: 600px;
+	float: left;
+}
+.details .min_details .des h2{
+	font-size: 25px;
+	letter-spacing: 3px;
+	line-height: 40px;
+	padding-bottom: 3px;
+}
+.details .min_details .des p{
+	line-height: 25px;
+	font-size: 16px;
+	text-indent: 2em;
+	letter-spacing: 1px;
+	color:#646464;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #ddd;
+}
+.details .min_details .des .des_right{
+	background: #ebebeb;
+	margin-bottom: 65px;
+}
+.details .min_details .des .des_right span{
+	display: block;
+	height: 20px;
+	margin-bottom: 15px;
+	font-size: 16px;
+	color: #919191;
+}
+.details .min_details .des .des_right span i{
+	font-style: normal;
+	color: #337ab7;
+}
+.details .min_details .des .des_right span em{
+	font-style: normal;
+	color: #656565;
+}
+.details .min_details .des .des_right span strong{
+	font-style: normal;
+	color: #ff2832;
+	font-size: 20px;
+}
+.details .min_details .des .des_right .last{
+	padding-bottom: 10px;
+}
+.details .min_details .des a{
+	display:inline-block;
+	text-align: center;
+	border-radius: 5px;
+}
+.details .min_details .des .addcart{
+	margin-left: 20px;
+	width:110px;
+	height: 35px;
+	line-height: 35px;
+	color: #fff;
+	background: #ff2832;
+}
+.details .min_details .des .shopping{
+	border:1px solid #ff2832;
+	background: #ffedee;
+	color: #ff2832;
+	height: 35px;
+	line-height: 35px;
+	width:100px;
+	margin-left: 220px;
+}
